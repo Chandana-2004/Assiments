@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+	FILE *fp;
+	fp=fopen("Myfile.txt", "r");
+	char string[100];
+	fgets(string,100,fp);
+	printf("%s", string);
+	fclose(fp);
+}
